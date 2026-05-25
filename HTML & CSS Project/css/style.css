@@ -1,0 +1,204 @@
+/* =========================Reset========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================Body========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9e9e9;
+    padding: 20px;
+    color: #222;
+}
+
+/* =========================Header========================= */
+
+.main-header {
+    background-color: #4d8fe6;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 0 0 18px 18px;
+    margin-bottom: 25px;
+}
+
+.main-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 16px;
+}
+
+/* =========================Cards========================= */
+
+.card {
+    background-color: white;
+    border: 1px solid #d7d7d7;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    margin-bottom: 25px;
+    font-size: 34px;
+}
+
+/* =========================Images========================= */
+
+.main-image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.image-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.image-oval {
+    width: 300px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* =========================Table========================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #d5d5d5;
+    padding: 14px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #4d8fe6;
+    color: white;
+}
+
+/* =========================Forms========================= */
+
+.form-card form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group span {
+    color: red;
+}
+
+/* Inputs */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Radio & Checkbox */
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+.inline-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+
+button {
+    background-color: #4d8fe6;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.reset-btn {
+    background-color: #6c757d;
+}
+
+/* =========================Responsive========================= */
+
+@media (max-width: 768px) {
+
+    .main-header h1 {
+        font-size: 28px;
+    }
+
+    .card h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .form-card form {
+        max-width: 100%;
+    }
+
+    .main-image,
+    .image-circle,
+    .image-oval {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .image-circle {
+        height: 320px;
+    }
+
+    .image-oval {
+        height: 200px;
+    }
+}
